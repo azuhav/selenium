@@ -1,4 +1,4 @@
-package com.duck.web;
+package com.azuhav.sample.core;
 
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
@@ -6,7 +6,7 @@ import org.openqa.selenium.WebElement;
 
 public class BasePage {
 
-    WebDriver driver;
+    public WebDriver driver;
 
     public BasePage (WebDriver driver) {
 

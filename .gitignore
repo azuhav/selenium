@@ -1,6 +1,9 @@
 ### Java ###
 *.class
 
+###IntelliJ###
+.idea
+
 # Package Files #
 *.jar
 *.war
@@ -18,3 +21,6 @@ gradle-app.setting
 
 # Cache of project
 .gradletasknamecache
+
+#drivers
+.exe

@@ -1,13 +1,20 @@
 Feature: Search ducks with Google
 
-  Scenario: Search ducks in the page text
+  Scenario Outline: Search ducks in the page text
 
     Given a user opens Google search page
-    When the user performs ducks search
+    When the user performs <birds> search
     Then ducks are present on the search result page
+    Examples:
+      | birds |
+    | ducks |
 
-  Scenario: Search ducks in links
+
+  Scenario Outline: Search ducks in links
 
     Given a user opens Google search page
-    When the user performs ducks search
+    When the user performs <birds> search
     Then ducks are present on the link text
+    Examples:
+      | birds |
+    | ducks |

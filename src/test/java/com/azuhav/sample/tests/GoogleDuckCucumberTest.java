@@ -1,4 +1,4 @@
-package com.duck.web;
+package com.azuhav.sample.tests;
 
 import cucumber.api.CucumberOptions;
 import cucumber.api.testng.AbstractTestNGCucumberTests;

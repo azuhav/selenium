@@ -4,8 +4,9 @@
 <suite name="Mini Test" verbose ="3" parallel="tests" thread-count="1">
 
     <test name="Google Page Test" enabled="true">
+
         <classes>
-            <class name="com.duck.web.GoogleDuckTest" />
+            <class name="com.azuhav.sample.tests.GoogleDuckCucumberTest" />
         </classes>
     </test>
 

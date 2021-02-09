@@ -1,5 +1,8 @@
-package com.duck.web;
+package com.azuhav.sample.pages;
 
+import com.azuhav.sample.core.BasePage;
+import com.azuhav.sample.core.Utils;
+import com.azuhav.sample.pages.GooglePage;
 import org.apache.commons.lang3.StringUtils;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
@@ -15,7 +18,7 @@ public class SearchResultPage extends BasePage {
 
     public boolean verifyDucksInPageText() {
 
-        String pageText = driver.findElement(By.cssSelector("#rcnt")).getText();
+        String pageText = driver.findElement(By.cssSelector(Utils.readJson("text_locator"))).getText();
 
         return StringUtils.containsIgnoreCase(pageText, GooglePage.ducks);
 
@@ -23,7 +26,7 @@ public class SearchResultPage extends BasePage {
 
     public boolean verifyDucksInLinkText() {
 
-        List<WebElement> headers = driver.findElements(By.cssSelector("#rcnt h3 > span"));
+        List<WebElement> headers = driver.findElements(By.cssSelector(Utils.readJson("link_locator")));
 
         StringBuilder stringBuilder = new StringBuilder();
 

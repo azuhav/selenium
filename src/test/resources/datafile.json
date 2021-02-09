@@ -1,0 +1,6 @@
+{
+  "url":"https://google.com",
+  "keyword": "ducks",
+  "text_locator": "#rcnt",
+  "link_locator": "#rcnt h3 > span"
+}
