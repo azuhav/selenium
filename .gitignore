@@ -3,6 +3,7 @@
 
 ###IntelliJ###
 .idea
+/.idea/
 
 # Package Files #
 *.jar
